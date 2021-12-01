@@ -19,3 +19,4 @@ numpy >= 1.21.0
 matplotlib>=3.3.3
 requests >= 2.25.1
 sklearn >= 0.0.0
+bs4>=4.8.1

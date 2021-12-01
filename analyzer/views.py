@@ -6,7 +6,7 @@ from django.core.files.images import ImageFile
 from django.conf import settings
 import os 
 import glob
-# import seaborn as sns
+import seaborn as sns
 import io
 import pandas as pd
 import numpy as np

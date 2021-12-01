@@ -11,7 +11,6 @@ import io
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from pyspark.ml.regression import LinearRegression
 import requests
 from sklearn import metrics
 from bs4 import BeautifulSoup

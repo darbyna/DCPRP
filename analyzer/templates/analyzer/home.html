@@ -1,0 +1,101 @@
+{% extends 'analyzer/index.html' %}
+{% load static %}
+{% block content %}
+
+
+<br>
+<br>
+
+<div class="container"style="margin-top: 0%;">
+            <div class="back-wrap">
+                <video id="video_bg_elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+                            <source src="{% static 'videos/PRPUI.mp4' %}">
+                            Video not supported
+                </video>
+            </div>
+
+
+
+              
+                <H1 style="color: rgb(145, 220, 255);text-align: center;"><b>District of Columbia Pandemic Pollution Rate Predictor (DCPRP)</b></H1>
+                <div class="row">
+                  <div class="col-sm" style="text-align: center;">
+                      <a href="{% url 'data' %}"><p style="color: rgb(0, 172, 172);"><b> Data </b></P></a>
+                  </div>
+                  <div class="col-sm" style="text-align: center;">
+                      <a href="{% url 'eda' %}"><p style="color: rgb(0, 172, 172);"><b> EDA </b></P></a>
+                  </div>
+                  <div class="col-sm" style="text-align: center;">
+                      <a href="{% url 'regression' %}"><p style="color: rgb(0, 172, 172);"><b> Regression </b></P></a>
+                  </div>
+                </div>
+            
+                <iframe style="width: 50%; height: 50%; margin-left: 25%; margin-right: 25%; border: 15px solid teal; border-radius: 20px;" loading="lazy" allowfullscreen
+                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJW-T2Wt7Gt4kRKl2I1CJFUsI&key=AIzaSyAqNogGp_YwPs38wTstua0B3khjPotnz3c"></iframe>
+          <div class="row">
+            <div class="col-sm">
+            
+
+              <p style="color: white;  text-align: justify;" > 
+                  <br>
+                  Welcome to the <b style="color:teal;">District of Columbia Pandemic Pollution Rate Predictor (DCPRP)</b>, an analytical tool utilized to examine the emission of pollutants during the COVID-19 (SARS-COV-2)
+                  pandemic via data from the <i> Environmental Protection Agency </i> and <i> Johns Hopkins University </i>.
+                  <br> 
+                  <br>
+                  With the DCPRP, exploratory data analytics will be displayed along with linear regression and 
+                  predictive ordinary least squares (OLS) neuronal models.The time-period that will be analyzed includes 
+                  2015-2021. Pollutants that will be investigated includes Particulate Matter 2.5, Particulate Matter 10, 
+                  Nitrogen Dioxide, Sulfur Dioxide, and Carbon Monoxide.   
+                  <br>
+                  <br>
+                  <B>The following links can be utilized for data reference: </B>
+                  <br>
+                  <i> Environmental Protection Agency </i>: <a href="https://www.epa.gov/outdoor-air-quality-data/download-daily-data">EPA SOURCE</a>
+                  <br>
+                  <i> Johns Hopkins University </i>: <a href="https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data"> JHU SOURCE </a>
+                  <br>
+                  <br>
+              </p>
+              <H3 style="color: rgb(145, 220, 255);text-align: center;"><b>Importance of Investigation</b></H3>
+
+              <p style="color: white;  text-align: justify;"> 
+                  <br>
+                  COVID-19 (Sars-COV-2) is a pneumonic-based respiratory virus that originated in Wuhan, China. COVID-19 has led to a pandemic with over six-hundred fifty thousand deaths in the United States of America and over four million deaths globally. This virus has been observed to have major effects on the respiratory and cardiovascular systems of infectants (Aveyard et al. 2021; Ebinger et al. 2020; Clerkin et al. 2020; Bansal, 2020 ). Symptoms of COVID-19 include tussis, fatigure, fibrous aches, pyrexia or chills, or more (Aveyard et al. 2021; Ebinger et al. 2020; Clerkin et al. 2020; Bansal, 2020 ). Individuals with pre-existing disorders such as obesity, cardiovascular disease, or respiratory disorders are considered at-risk as they are more prone to fatality via COVID-19 (Aveyard et al. 2021; Ebinger et al. 2020; Clerkin et al. 2020; Bansal, 2020 ). With COVID-19 mutating and thus having multiple variant iterations, the virus will continue to become more potent and cause more deaths across the globe. Unfortunately, not only will the novel variants of COVID-19 lead to omnipotency, but confounding factors such as pollutant concentrations will as well. In this manuscript, we will focus primarily on the respiratory aspects of COVID-19 by observing trends of the common pollutant known as Particulate Matter 2.5 and other confounding pollutants during the COVID-19 pandemic.
+                  <br>
+                  <br>
+                  Particulate Matter 2.5 is a particle that is less than 2.5 micrometers large (Keet et al. 2017; Zhang et al. 2019; White et al. 2019; Tecer et al. 2008; Comunian et al. 2020; Shafinaz et al. 2021). Particulate Matter 2.5 commonly derives from automobiles, construction, and deforestation (Keet et al. 2017; Zhang et al. 2019; White et al. 2019; Tecer et al. 2008; Comunian et al. 2020; Shafinaz et al. 2021). This particular pollutant can cause major health disorders within conspecifics upon inhalation (Keet et al. 2017; Zhang et al. 2019; White et al. 2019; Tecer et al. 2008; Comunian et al. 2020; Shafinaz et al. 2021). Disorders that arise from particular matter 2.5 exposure includes lung cancer and other respiratory disorders (Keet et al. 2017; Zhang et al. 2019; White et al. 2019; Tecer et al. 2008; Comunian et al. 2020; Shafinaz et al. 2021). Particulate matter 2.5 has been observed to have major effects on conspecifics that have asthma and any alternative respiratory disorders (Keet et al. 2017; Zhang et al. 2019; White et al. 2019; Tecer et al. 2008; Comunian et al. 2020; Shafinaz et al. 2021). As a result of particulate matter 2.5 being a major contributing factor for respiratory disorders, it is essential to observe how particulate matter 2.5 can affect victims of COVID-19. When conspecifics are exposed to particulate matter 2.5, the transmission of COVID-19 increases significantly (Keet et al. 2017; Zhang et al. 2019; White et al. 2019; Tecer et al. 2008; Comunian et al. 2020; Shafinaz et al. 2021). Particulate matter 2.5 is a known contributor for the enhanced transmission of COVID-19 (Keet et al. 2017; Zhang et al. 2019; White et al. 2019; Tecer et al. 2008; Comunian et al. 2020; Shafinaz et al. 2021). In fact, it has been observed that particulate matter 2.5 particles contain COVID-19 viral fragments that can promote the spread of the virus (Keet et al. 2017; Zhang et al. 2019; White et al. 2019; Tecer et al. 2008; Comunian et al. 2020; Shafinaz et al. 2021). In essence, not only is particulate matter 2.5 known for promoting oncogenesis, but it can also promote the matriculation of COVID-19. Since particulate matter 2.5 is correlated with increased rates of COVID-19 infection, it is essential to examine the general concentration of PM2.5 during the COVID-19 pandemic and before. This will ultimately allow one to determine the correlations between other pollutants and additional confounding factors - such as COVID-19 mortalities.
+                  <br>
+                  <br>
+                  Resultantly, while observing the trends of COVID-19 throughout the 2019-2020 period, we hypothesize that in the Washington, District of Columbia, area, PM2.5 will show a decrease during the earlier periods of the COVID-19 pandemic. However, in the later periods of 2020, the PM2.5 concentrations will begin to increase due to elevated human activity. PM 2.5 concentrations will be observed in relation to alternative pollutants such as Nitrogen Dioxide, Carbon Monoxide, and Sulfur Dioxide within the Washington, D.C. area from the periods of 2015-2020 to procure an accurate depiction of how PM 2.5 altered during the pandemic. PM 2.5 concentrations will correlate with the air quality trends and trends of COVID-19 cases and deaths.
+              </p>
+              
+            </div>
+          </div>
+
+        
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="square3">
+        
+
+        
+        </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock content %}

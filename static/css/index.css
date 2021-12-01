@@ -1,0 +1,128 @@
+/* Styling */
+
+body{
+  font-family: 'Fjalla One', sans-serif;
+  background: radial-gradient(circle at 100px 100px rgb(51, 51, 51), rgb(0, 172, 172));
+  margin: 0;
+  padding: 0;
+
+
+}
+h1 {
+  font-size: 2.5vw;
+}
+
+p {
+  font-size: 1.5vw;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+  background-image: linear-gradient(rgb(0, 172, 172), rgb(59, 59, 59));
+  opacity: 0.2;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-image: linear-gradient(rgb(0, 172, 172), rgb(59, 59, 59));
+  box-shadow: inset 0 0 5px rgb(63, 63, 63); 
+  border-radius: 0px;
+  opacity: 0.2;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(rgb(0, 172, 172), rgb(59, 59, 59));
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(87, 202, 255); 
+  opacity: 0.2;
+}
+
+.prpui_center {
+  width: 50%;
+  height: auto;
+  margin-left: 25%;
+  margin-right: 25%;
+
+}
+
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1000;
+  top: 0;
+  left: 0;
+}
+
+
+.top-banner {
+    margin-top: 0%;
+    position:sticky;
+    z-index: 100;
+    height: 10%;
+    background: transparent;
+    width: 100%;
+  }
+  
+  .bottom-banner {
+    bottom: 0%;
+    position:fixed;
+    border-bottom: 10px solid rgb(44, 44, 44);
+    z-index: 100;
+    height: 10%;
+    background: transparent;
+    width: 100%;
+  }
+  
+  
+  
+  .logo {
+    margin-top:0.5%;
+    z-index: 100;
+    position: fixed;
+    height: 7%;
+    width: auto;
+    max-width: 140px;
+    
+  }
+
+
+.navbar navbar-expand-lg navbar-light {
+  background-color: black;
+  width: 100%; 
+  margin-right:-100px;
+} 
+
+
+
+.navbar navbar-expand-lg navbar-light {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+  overflow: -100;
+}
+
+.container .section {
+  position: relative; 
+  width: 100%;
+  height: auto;
+  background-blend-mode: multiply;
+  
+
+}
+

@@ -1,0 +1,54 @@
+{% load static %}
+<html>
+<head>
+
+    <title>DCPRP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="{% static 'images/logo.png' %}"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta http-equiv="content-security-policy|content-type|default-style|refresh">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+
+
+    </head>
+    <body>
+            <a href="javascript: reload()"></a>
+                            <div class="top_banner" style="opacity: 0.4;background-image: linear-gradient(black, rgb(0, 172, 172), black);">
+                            <br>
+                            <a class="navbar-brand" href="{% url 'load'%}" style="text-align: center;">
+                                    <img src="{% static "images/logo.png"%}"  href="{% url 'load'%}"width="10%" height="auto" class="d-inline-block align-top" alt="">
+                            </a>
+                            <div class="navbar-brand" href="{% url 'load'%}" style="text-align: left; font-size: 0.5vw; color: white;"> Check out UMBC: <a href="https://www.umbc.edu/">Website</a> <BR> Check out BOLT: <a href="https://www.biologistsoflatertomorrows.com/">Website</a> </div>
+                            </div>
+
+
+                                            
+                    <div class="bottom-banner" style="text-align: center;">
+                            <br>
+
+                    
+                    </div>
+
+
+
+            {% block content %}
+
+
+
+            {% endblock content %}
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
+    </body>
+    </html>

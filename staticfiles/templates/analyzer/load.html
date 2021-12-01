@@ -1,0 +1,19 @@
+{% extends 'analyzer/index.html' %}
+{% load static %}
+{% block content %}
+
+<br>
+<br>
+<meta http-equiv="Refresh" content="5; {% url 'home' %}" />
+<div class="container">
+            <div class="back-wrap">
+                <video id="video_bg_elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+                            <source src="{% static 'videos/PRPUI.mp4' %}">
+                            Video not supported
+                </video>
+            </div>
+
+        <img src="{% static 'images/logo.png'%}" class="prpui_center">
+</div>
+
+{% endblock content %}

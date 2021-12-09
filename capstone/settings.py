@@ -15,13 +15,7 @@ from pathlib import Path
 import psycopg2
 import logging.config
 from django.utils.log import DEFAULT_LOGGING
-from decouple import config
 from unipath import Path
-import boto3
-from boto3 import *
-from dj_database_url import parse as db_url
-import dj_database_url
-from storages.backends.s3boto3 import S3Boto3Storage
 from io import StringIO
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
